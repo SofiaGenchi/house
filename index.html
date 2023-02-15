@@ -1,236 +1,350 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>House</title>
 
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header class="header" id="header">
-        <nav class="nav container">
-            <a href="#" class="nav__logo" id="">
-                Holux <ion-icon name="home-outline"></ion-icon>
-            </a>
+    <link rel="stylesheet" href="style.css" />
 
-            <div class="nav__menu">
-                <ul class="nav__list">
-                    <li class="nav__item">
-                        <a href="#home" class="nav__link" id="">
-                            <ion-icon name="home-outline"></ion-icon>
-                            <span>Home</span>
-                        </a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#popular" class="nav__link" id="">
-                            <ion-icon name="business-outline"></ion-icon>
-                            <span>Residences</span>
-                        </a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#value" class="nav__link" id="">
-                            <ion-icon name="ribbon-outline"></ion-icon>
-                            <span>Value</span>
-                        </a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#contact" class="nav__link" id="">
-                            <ion-icon name="call-outline"></ion-icon>
-                            <span>Contact</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <a href="#" class="button nav__button" id="">
-                Subscribe
-            </a>
-        </nav>
+    <!-- swiper css -->
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  </head>
+  <body>
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo" id="">
+          Holux <ion-icon name="home-outline"></ion-icon>
+        </a>
+
+        <div class="nav__menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link" id="">
+                <ion-icon name="home-outline"></ion-icon>
+                <span>Home</span>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#popular" class="nav__link" id="">
+                <ion-icon name="business-outline"></ion-icon>
+                <span>Residences</span>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#value" class="nav__link" id="">
+                <ion-icon name="ribbon-outline"></ion-icon>
+                <span>Value</span>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link" id="">
+                <ion-icon name="call-outline"></ion-icon>
+                <span>Contact</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <a href="#" class="button nav__button" id=""> Subscribe </a>
+      </nav>
     </header>
 
     <main class="main">
-        <section class="home section" id="home">
-            <div class="home__container container grid">
-                <div class="home__data">
-                    <h1 class="home__title">
-                        Discover <br> Most Suitable <br> Property
-                    </h1>
-                    <p class="home__description">
-                        Find a variety of properties that suit you very easily, forget all difficulties in finding a residence for you.
+      <section class="home section" id="home">
+        <div class="home__container container grid">
+          <div class="home__data">
+            <h1 class="home__title">
+              Discover <br />
+              Most Suitable <br />
+              Property
+            </h1>
+            <p class="home__description">
+              Find a variety of properties that suit you very easily, forget all
+              difficulties in finding a residence for you.
+            </p>
+
+            <form action="" class="home__search">
+                <i class='bx bx-navigation'></i>
+              <input
+                type="search"
+                placeholder="Search by location..."
+                class="home__search-input"
+              />
+              <button class="button">Search</button>
+            </form>
+
+            <div class="home__value">
+              <div>
+                <h2 class="home__value-number">9K <span>+</span></h2>
+                <span class="home__value-description">
+                  Premuim <br />
+                  Product
+                </span>
+              </div>
+
+              <div>
+                <h2 class="home__value-number">2K <span>+</span></h2>
+                <span class="home__value-description">
+                  Happy <br />
+                  Customer
+                </span>
+              </div>
+
+              <div>
+                <h2 class="home__value-number">28K <span>+</span></h2>
+                <span class="home__value-description">
+                  Awards <br />
+                  Winning
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="home__images">
+            <div class="home__orbe">
+              <div class="home__img">
+                <img src="./img/homeimg.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="logos section">
+        <div class="logos__container container grid">
+          <div class="logos__img">
+            <img src="./img/logo1.png" alt="" />
+          </div>
+
+          <div class="logos__img">
+            <img src="./img/logo2.png" alt="" />
+          </div>
+
+          <div class="logos__img">
+            <img src="./img/logo3.png" alt="" />
+          </div>
+
+          <div class="logos__img">
+            <img src="./img/logo4.png" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <section class="popular section" id="popular">
+        <div class="container">
+          <span class="section__subtitle">Best Choise</span>
+          <h2 class="section__title">Popular Residences <span>.</span></h2>
+
+          <div class="popular__container swiper">
+            <div class="swiper-wrapper">
+              <article class="popular__card swiper-slide">
+                <img class="popular__img" src="./img/popular1.jpg" alt="" />
+
+                <div class="popular__data">
+                  <h2 class="popular__price"><span>$</span>66,345</h2>
+                  <h3 class="popular__title">Garden City Assat</h3>
+                  <p class="popular__description">
+                    Street The Garden City Of MiraFlores, Lima - Perú Av. Sol
+                    #9876
+                  </p>
+                </div>
+              </article>
+
+              <article class="popular__card swiper-slide">
+                <img class="popular__img" src="./img/popular2.jpg" alt="" />
+
+                <div class="popular__data">
+                  <h2 class="popular__price"><span>$</span>35,159</h2>
+                  <h3 class="popular__title">Gables Luxurious House</h3>
+                  <p class="popular__description">
+                    Street The Garden City Of MiraFlores, Lima - Perú Av. Sol
+                    #9876
+                  </p>
+                </div>
+              </article>
+
+              <article class="popular__card swiper-slide">
+                <img class="popular__img" src="./img/popular3.jpg" alt="" />
+
+                <div class="popular__data">
+                  <h2 class="popular__price"><span>$</span>76,829</h2>
+                  <h3 class="popular__title">Garden Orchard City</h3>
+                  <p class="popular__description">
+                    Street The Garden City Of MiraFlores, Lima - Perú Av. Sol
+                    #9876
+                  </p>
+                </div>
+              </article>
+
+              <article class="popular__card swiper-slide">
+                <img class="popular__img" src="./img/popular4.jpg" alt="" />
+
+                <div class="popular__data">
+                  <h2 class="popular__price"><span>$</span>62,024</h2>
+                  <h3 class="popular__title">Luxurious City Garden</h3>
+                  <p class="popular__description">
+                    Street The Garden City Of MiraFlores, Lima - Perú Av. Sol
+                    #9876
+                  </p>
+                </div>
+              </article>
+
+              <article class="popular__card swiper-slide">
+                <img class="popular__img" src="./img/popular5.jpg" alt="" />
+
+                <div class="popular__data">
+                  <h2 class="popular__price"><span>$</span>47,043</h2>
+                  <h3 class="popular__title">Aliva Private Garden</h3>
+                  <p class="popular__description">
+                    Street The Garden City Of MiraFlores, Lima - Perú Av. Sol
+                    #9876
+                  </p>
+                </div>
+              </article>
+            </div>
+
+            <!-- <div class="swiper-button-next">
+                <i class='bx bx-chevron-right'></i>
+            </div>
+            <div class="swiper-button-prev">
+                <i class='bx bx-chevron-right'></i>
+            </div> -->
+          </div>
+        </div>
+      </section>
+
+      <section class="value section" id="value">
+        <div class="value__container container grid">
+            <div class="value__images">
+                <div class="value__orbe"></div>
+
+                <div class="value__img">
+                    <img src="./img/value.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="value__content">
+                <div class="value__data">
+                    <span class="section__subtitle">Our Value</span>
+                    <h2 class="section__title">
+                        Value We Give To You<span>.</span>
+                    </h2>
+                    <p class="value__description">
+                        We always ready to help by providing the best service for you.
+                        We belive a good place to live can make your life better.
                     </p>
+                </div>
 
-                    <form action="" class="home__search">
-                        <ion-icon name="navigate-outline"></ion-icon>
-                        <input type="search" placeholder="Search by location..." class="home__search-input">
-                        <button class="button">Search</button>
-                    </form>
+                <div class="value__accordion">
+                    <div class="value__accordion-item">
+                        <header class="value__accordion-header">
+                            <i class='bx bxs-shield-x value__accordion-icon'></i>
+                            <h3 class="value__accordion-title">
+                                Best interest rates on the market
+                            </h3>
+                            <div class="value__accordion-arrow">
+                                <i class='bx bxs-down-arrow'></i>
+                            </div>
+                        </header>
 
-
-                    <div class="home__value">
-                        <div>
-                            <h2 class="home__value-number">
-                                9K <span>+</span>
-                            </h2>
-                            <span class="home__value-description">
-                                Premuim <br> Product
-                            </span>
+                        <div class="value__accordion-countent">
+                            <p class="value__accordion-description">
+                                Price we provides is the best for you, we guarantee no price changes on your property due to various unexpected costs that may come.
+                            </p>
                         </div>
+                    </div>
 
-                        <div>
-                            <h2 class="home__value-number">
-                                2K <span>+</span>
-                            </h2>
-                            <span class="home__value-description">
-                                Happy <br> Customer
-                            </span>
+                    <div class="value__accordion-item">
+                        <header class="value__accordion-header">
+                            <i class='bx bxs-x-square value__accordion-icon'></i>
+                            <h3 class="value__accordion-title">
+                                Prevent unstable prices
+                            </h3>
+                            <div class="value__accordion-arrow">
+                                <i class='bx bxs-down-arrow'></i>
+                            </div>
+                        </header>
+
+                        <div class="value__accordion-countent">
+                            <p class="value__accordion-description">
+                                Price we provides is the best for you, we guarantee no price changes on your property due to various unexpected costs that may come.
+                            </p>
                         </div>
+                    </div>
 
-                        <div>
-                            <h2 class="home__value-number">
-                                28K <span>+</span>
-                            </h2>
-                            <span class="home__value-description">
-                                Awards <br> Winning
-                            </span>
+                    <div class="value__accordion-item">
+                        <header class="value__accordion-header">
+                            <i class='bx bxs-bar-chart-square value__accordion-icon'></i>
+                            <h3 class="value__accordion-title">
+                                Best price on the market
+                            </h3>
+                            <div class="value__accordion-arrow">
+                                <i class='bx bxs-down-arrow'></i>
+                            </div>
+                        </header>
+
+                        <div class="value__accordion-countent">
+                            <p class="value__accordion-description">
+                                Price we provides is the best for you, we guarantee no price changes on your property due to various unexpected costs that may come.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="value__accordion-item">
+                        <header class="value__accordion-header">
+                            <i class='bx bxs-check-square value__accordion-icon'></i>
+                            <h3 class="value__accordion-title">
+                                Security of your data
+                            </h3>
+                            <div class="value__accordion-arrow">
+                                <i class='bx bxs-down-arrow'></i>
+                            </div>
+                        </header>
+
+                        <div class="value__accordion-countent">
+                            <p class="value__accordion-description">
+                                Price we provides is the best for you, we guarantee no price changes on your property due to various unexpected costs that may come.
+                            </p>
                         </div>
                     </div>
                 </div>
-
-                <div class="home__images">
-                    <div class="home__orbe">
-
-                        <div class="home__img">
-                            <img src="./img/homeimg.jpg" alt="">
-                        </div>
-                    </div>
-                </div>
             </div>
-        </section>
-
-        <section class="logos section">
-            <div class="logos__container container grid">
-                <div class="logos__img">
-                    <img src="./img/logo1.png" alt="">
-                </div>
-
-                <div class="logos__img">
-                    <img src="./img/logo2.png" alt="">
-                </div>
-
-                <div class="logos__img">
-                    <img src="./img/logo3.png" alt="">
-                </div>
-
-                <div class="logos__img">
-                    <img src="./img/logo4.png" alt="">
-                </div>
-            </div>
-        </section>
-
-        <section class="popular section" id="popular">
-            <div class="container">
-                <span class="section__subtitle">Best Choise</span>
-                <h2 class="section__title">
-                    Popular Residences <span>.</span>
-                </h2>
-
-                <div class="popular__container">
-                    <div>
-                        <article class="popular__card">
-                            <img class="popular__img" src="./img/popular1.jpg" alt="">
-
-                            <div class="popular__data">
-                                <h2 class="popular__price">
-                                    <span>$</span>66,345
-                                </h2>
-                                <h3 class="popular__title">
-                                    Garden City Assat
-                                </h3>
-                                <p class="popular__description">
-                                    Street The Garden City Of MiraFlores,
-                                    Lima - Perú Av. Sol #9876
-                                </p>
-                            </div>
-                        </article>
-
-                        <article class="popular__card">
-                            <img class="popular__img" src="./img/popular2.jpg" alt="">
-
-                            <div class="popular__data">
-                                <h2 class="popular__price">
-                                    <span>$</span>35,159
-                                </h2>
-                                <h3 class="popular__title">
-                                    Gables Luxurious House
-                                </h3>
-                                <p class="popular__description">
-                                    Street The Garden City Of MiraFlores,
-                                    Lima - Perú Av. Sol #9876
-                                </p>
-                            </div>
-                        </article>
-
-                        <article class="popular__card">
-                            <img class="popular__img" src="./img/popular3.jpg" alt="">
-
-                            <div class="popular__data">
-                                <h2 class="popular__price">
-                                    <span>$</span>76,829
-                                </h2>
-                                <h3 class="popular__title">
-                                    Garden Orchard City
-                                </h3>
-                                <p class="popular__description">
-                                    Street The Garden City Of MiraFlores,
-                                    Lima - Perú Av. Sol #9876
-                                </p>
-                            </div>
-                        </article>
-
-                        <article class="popular__card">
-                            <img class="popular__img" src="./img/popular4.jpg" alt="">
-
-                            <div class="popular__data">
-                                <h2 class="popular__price">
-                                    <span>$</span>62,024
-                                </h2>
-                                <h3 class="popular__title">
-                                    Luxurious City Garden
-                                </h3>
-                                <p class="popular__description">
-                                    Street The Garden City Of MiraFlores,
-                                    Lima - Perú Av. Sol #9876
-                                </p>
-                            </div>
-                        </article>
-
-                        <article class="popular__card">
-                            <img class="popular__img" src="./img/popular5.jpg" alt="">
-
-                            <div class="popular__data">
-                                <h2 class="popular__price">
-                                    <span>$</span>47,043
-                                </h2>
-                                <h3 class="popular__title">
-                                    Aliva Private Garden
-                                </h3>
-                                <p class="popular__description">
-                                    Street The Garden City Of MiraFlores,
-                                    Lima - Perú Av. Sol #9876
-                                </p>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-            </div>
-        </section>
+        </div>
+      </section>
     </main>
 
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
 
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 
-    <script src="./main.js"></script>
-</body>
+    <script src="main.js"></script>
+
+    <!-- Swiper Js -->
+    <script src="./js/swiper-bundle.min.js"></script>
+
+    <script>
+      var swiperPopular = new Swiper(".popular__container", {
+        spaceBetween: 32,
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        loop: true,
+
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
 </html>
