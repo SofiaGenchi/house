@@ -619,3 +619,45 @@ button {
 .subscribe__button:hover{
     background-color: var(--first-color);
 }
+
+/* Footer------ */
+.footer__container{
+    row-gap: 2.5rem;
+}
+
+.footer__logo{
+    color: var(--first-color);
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-semi-bold);
+    display: inline-flex;
+    align-items: center;
+    column-gap: .25rem;
+    margin-bottom: .75rem;
+}
+
+.footer__logo i {
+    font-size: 1.25rem;
+}
+
+.footer__description, .footer__link{
+    font-size: var(--small-font-size);
+    font-weight: var(--font-medium);
+}
+
+.footer__content{
+    grid-template-columns: repeat(2, max-content);
+    gap: 2.5rem 4rem;
+}
+
+.footer__title {
+    font-size: var(--h3-font-size);
+    margin-bottom: 1rem;
+}
+
+.footer__links{
+    row-gap: .5rem;
+}
+
+.footer__link{
+    color: var(--text-color);
+}
