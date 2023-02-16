@@ -5,6 +5,20 @@ function scrollHeader() {
 }
 window.addEventListener("scroll", scrollHeader);
 
+
+var swiperPopular = new Swiper(".popular__container", {
+  spaceBetween: 32,
+  grabCursor: true,
+  centeredSlides: true,
+  slidesPreView: 'auto',
+  loop: true,
+
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+
 const accordionItems = document.querySelectorAll(".value__accordion-item");
 accordionItems.forEach((item) => {
   const accordionHeader = item.querySelector(".value__accordion-header");

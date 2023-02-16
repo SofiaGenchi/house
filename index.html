@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>House</title>
 
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
 
     <!-- swiper css -->
-    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
 
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   </head>
@@ -17,32 +17,32 @@
     <header class="header" id="header">
       <nav class="nav container">
         <a href="#" class="nav__logo" id="">
-          Holux <ion-icon name="home-outline"></ion-icon>
+          Holux <i class='bx bxs-home' ></i>
         </a>
 
         <div class="nav__menu">
           <ul class="nav__list">
             <li class="nav__item">
               <a href="#home" class="nav__link" id="">
-                <ion-icon name="home-outline"></ion-icon>
+                <i class='bx bx-home-alt-2'></i>
                 <span>Home</span>
               </a>
             </li>
             <li class="nav__item">
               <a href="#popular" class="nav__link" id="">
-                <ion-icon name="business-outline"></ion-icon>
+                <i class='bx bxs-building-house'></i>
                 <span>Residences</span>
               </a>
             </li>
             <li class="nav__item">
               <a href="#value" class="nav__link" id="">
-                <ion-icon name="ribbon-outline"></ion-icon>
+                <i class="bx bx-award"></i>
                 <span>Value</span>
               </a>
             </li>
             <li class="nav__item">
               <a href="#contact" class="nav__link" id="">
-                <ion-icon name="call-outline"></ion-icon>
+                <i class='bx bx-phone'></i>
                 <span>Contact</span>
               </a>
             </li>
@@ -106,7 +106,7 @@
           <div class="home__images">
             <div class="home__orbe">
               <div class="home__img">
-                <img src="./img/homeimg.jpg" alt="" />
+                <img src="./assets/img/homeimg.jpg" alt="" />
               </div>
             </div>
           </div>
@@ -116,19 +116,19 @@
       <section class="logos section">
         <div class="logos__container container grid">
           <div class="logos__img">
-            <img src="./img/logo1.png" alt="" />
+            <img src="./assets/img/logo1.png" alt="" />
           </div>
 
           <div class="logos__img">
-            <img src="./img/logo2.png" alt="" />
+            <img src="./assets/img/logo2.png" alt="" />
           </div>
 
           <div class="logos__img">
-            <img src="./img/logo3.png" alt="" />
+            <img src="./assets/img/logo3.png" alt="" />
           </div>
 
           <div class="logos__img">
-            <img src="./img/logo4.png" alt="" />
+            <img src="./assets/img/logo4.png" alt="" />
           </div>
         </div>
       </section>
@@ -141,7 +141,7 @@
           <div class="popular__container swiper">
             <div class="swiper-wrapper">
               <article class="popular__card swiper-slide">
-                <img class="popular__img" src="./img/popular1.jpg" alt="" />
+                <img class="popular__img" src="./assets/img/popular1.jpg" alt="" />
 
                 <div class="popular__data">
                   <h2 class="popular__price"><span>$</span>66,345</h2>
@@ -154,7 +154,7 @@
               </article>
 
               <article class="popular__card swiper-slide">
-                <img class="popular__img" src="./img/popular2.jpg" alt="" />
+                <img class="popular__img" src="./assets/img/popular2.jpg" alt="" />
 
                 <div class="popular__data">
                   <h2 class="popular__price"><span>$</span>35,159</h2>
@@ -167,7 +167,7 @@
               </article>
 
               <article class="popular__card swiper-slide">
-                <img class="popular__img" src="./img/popular3.jpg" alt="" />
+                <img class="popular__img" src="./assets/img/popular3.jpg" alt="" />
 
                 <div class="popular__data">
                   <h2 class="popular__price"><span>$</span>76,829</h2>
@@ -180,7 +180,7 @@
               </article>
 
               <article class="popular__card swiper-slide">
-                <img class="popular__img" src="./img/popular4.jpg" alt="" />
+                <img class="popular__img" src="./assets/img/popular4.jpg" alt="" />
 
                 <div class="popular__data">
                   <h2 class="popular__price"><span>$</span>62,024</h2>
@@ -193,7 +193,7 @@
               </article>
 
               <article class="popular__card swiper-slide">
-                <img class="popular__img" src="./img/popular5.jpg" alt="" />
+                <img class="popular__img" src="/assets/img/popular5.jpg" alt="" />
 
                 <div class="popular__data">
                   <h2 class="popular__price"><span>$</span>47,043</h2>
@@ -206,12 +206,13 @@
               </article>
             </div>
 
-            <!-- <div class="swiper-button-next">
+            <div class="swiper-button-next">
                 <i class='bx bx-chevron-right'></i>
             </div>
             <div class="swiper-button-prev">
                 <i class='bx bx-chevron-right'></i>
-            </div> -->
+            </div>
+
           </div>
         </div>
       </section>
@@ -222,7 +223,7 @@
                 <div class="value__orbe"></div>
 
                 <div class="value__img">
-                    <img src="./img/value.jpg" alt="">
+                    <img src="./assets/img/value.jpg" alt="">
                 </div>
             </div>
 
@@ -314,37 +315,36 @@
             </div>
         </div>
       </section>
+
+      <section class="contact section" id="contact">
+        <div class="contact__container container grid">
+          <div class="contact__images">
+            <div class="contact__orbe"></div>
+
+            <div class="contact__img">
+              <img src="./assets/img/contact.png" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="subscribe section">
+
+      </section>
     </main>
 
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
+
+    <footer class="footer section">
+
+    </footer>
 
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 
-    <script src="main.js"></script>
 
     <!-- Swiper Js -->
-    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./assets/js/swiper-bundle.min.js"></script>
 
-    <script>
-      var swiperPopular = new Swiper(".popular__container", {
-        spaceBetween: 32,
-        grabCursor: true,
-        centeredSlides: true,
-        slidesPerView: 'auto',
-        loop: true,
+    <script src="./assets/js/main.js"></script>
 
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
-    </script>
   </body>
 </html>
