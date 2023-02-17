@@ -10,7 +10,7 @@ var swiperPopular = new Swiper(".popular__container", {
   spaceBetween: 32,
   grabCursor: true,
   centeredSlides: true,
-  slidesPreView: 'auto',
+  slidesPerView: 'auto',
   loop: true,
 
   navigation: {

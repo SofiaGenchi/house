@@ -57,6 +57,7 @@ body {
   background-color: var(--body-color);
   color: var(--text-color);
   transition: .3s;
+  margin: 0;
 }
 
 h1,
@@ -94,6 +95,10 @@ button {
 
 .grid {
   display: grid;
+}
+
+.main {
+  overflow: hidden;
 }
 
 .section {
@@ -247,6 +252,7 @@ button {
 .home__value {
   display: flex;
   column-gap: 2.5rem;
+  justify-content: center;
 }
 
 .home__value-number {
@@ -348,10 +354,10 @@ button {
 .popular__card {
   width: 290px;
   background-color: var(--container-color);
-  padding: 0.5rem 0.5rem 1.5rem;
+  padding: .5rem .5rem 1.5rem;
   border-radius: 1rem;
   margin: 0 auto;
-  transition: 0.4s;
+  transition: .4s;
 }
 
 .popular__img {
@@ -360,13 +366,13 @@ button {
 }
 
 .popular__data {
-  padding: 0 1rem 0 0.5rem;
+  padding: 0 1rem 0 .5rem;
 }
 
 .popular__price {
   font-size: var(--h2-font-size);
   color: var(--text-color);
-  margin-bottom: 0.25rem;
+  margin-bottom: .25rem;
 }
 
 .popular__price span {
@@ -375,7 +381,7 @@ button {
 
 .popular__title {
   font-size: var(--h3-font-size);
-  margin-bottom: 0.75rem;
+  margin-bottom: .75rem;
 }
 
 .popular__description {
@@ -384,6 +390,34 @@ button {
 
 .popular__card:hover {
   box-shadow: 0 12px 16px hsla(228, 66%, 45%, 0.1);
+}
+
+
+.swiper-button-prev::after,
+.swiper-button-next::after{
+  content: '';
+}
+
+.swiper-button-next,
+.swiper-button-prev{
+  top: initial;
+  bottom: 0;
+  width: initial;
+  height: initial;
+  background-color: var(--container-color);
+  border: 2px solid var(--text-color-light);
+  padding: 6px;
+  border-radius: .5rem;
+  font-size: 1.5rem;
+  color: var(--first-color);
+}
+
+.swiper-button-prev{
+  left: calc(50% - 3rem);
+}
+
+.swiper-button-next{
+  right: calc(50% - 3rem);
 }
 
 /* value------ */
@@ -854,10 +888,6 @@ body.dark-theme{
     height: 264px;
   }
 
-  .logos__container{
-    gap: 2rem 1rem;
-  }
-
   .popular__card{
     width: 230px;
     padding: .5rem .5rem .75rem;
@@ -918,11 +948,6 @@ body.dark-theme{
     padding-bottom: 2rem;
   }
 
-  .logos__container{
-    grid-template-columns: repeat(4, max-content);
-    justify-content: center;
-  }
-
   .value__container,
   .contact__container{
     grid-template-columns: repeat(2, 1fr);
@@ -947,10 +972,13 @@ body.dark-theme{
   }
 }
 
-@media screen and (min-width: 1023px){
-  .section{
+@media screen and (min-width: 1024px){
+  .section {
     padding: 7.5rem 0 1rem;
-  }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
   .section__title{
     font-size: 2.25rem;
@@ -1031,6 +1059,7 @@ body.dark-theme{
 
   .home__value{
     column-gap: 3.5rem;
+    justify-content: center;
   }
 
   .home__orbe{
@@ -1044,10 +1073,6 @@ body.dark-theme{
     height: 634px;
     border-radius: 236px 236px 12px 12px;
     bottom: -2.5rem;
-  }
-
-  .logos__img img {
-    height: 100px;
   }
 
   .popular__container{
