@@ -686,7 +686,7 @@ button {
 .footer__content{
   grid-template-columns: repeat(2, max-content);
   gap: 2.5rem 4rem;
-  margin-top: 1rem;
+  margin: 1rem 2rem;
 }
 
 .footer__links{
