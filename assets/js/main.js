@@ -10,7 +10,7 @@ var swiperPopular = new Swiper(".popular__container", {
   spaceBetween: 32,
   grabCursor: true,
   centeredSlides: true,
-  slidesPerView: 'auto',
+  slidesPerView: 3,
   loop: true,
 
   navigation: {
@@ -117,3 +117,17 @@ sr.reveal(`.home__images`, {delay: 800, origin: 'botton'})
 sr.reveal(`.logos__img`, {interval: 100})
 sr.reveal(`.value__images, .contact__content`, {origin: 'left'})
 sr.reveal(`.value__content, .contact__images`, {origin: 'right'})
+
+// Copiar email
+function copyEmail() {
+  let email = document.getElementById("email");
+  let button = document.querySelector(".button-email");
+
+  // email.select();
+  email.setSelectionRange(0, 99999);
+
+  navigator.clipboard.writeText(email.value).then(() =>{
+    button.innerHTML = "Copied";
+    setTimeout(() => button.innerHTML = "Email", 1000);
+  })
+}
