@@ -7,16 +7,27 @@ window.addEventListener("scroll", scrollHeader);
 
 
 var swiperPopular = new Swiper(".popular__container", {
-  spaceBetween: 30,
+  spaceBetween: 32,
   grabCursor: true,
   centeredSlides: true,
   slidesPerView: 3,
   loop: true,
 
+  breakpoints: {
+    534: {
+      slidesPerView: 3,
+    },
+    325: {
+      slidesPerView: 1,
+    },
+  },
+
+
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
+
 });
 
 const accordionItems = document.querySelectorAll(".value__accordion-item");
@@ -135,7 +146,7 @@ function copyEmail() {
 // leyendo json
 
 async function propiedades() {
-  const requestURL = 'https://raw.githubusercontent.com/SofiaGenchi/house/main/assets/json/datos.json';
+  const requestURL = 'assets/json/datos.json';
   const request = new Request(requestURL);
 
   const response = await fetch(request);
@@ -163,7 +174,7 @@ function propiedadesArticle(obj) {
     img.src = propiedad.imagen;
     img.classList.add('popular__img');
 
-    price.innerHTML = `<span>USD</span> ${parseInt(propiedad.precio)}`;
+    price.innerHTML = `<span>USD</span> ${propiedad.precio}`;
     price.classList.add('popular__price');
 
     title.textContent = `${propiedad.nombre}`;
