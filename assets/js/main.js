@@ -131,3 +131,55 @@ function copyEmail() {
     setTimeout(() => button.innerHTML = "Email", 1000);
   })
 }
+
+// leyendo json
+function getData(){
+  fetch('./assets/json/data.json')
+    .then(res => res.json)
+    .then(datos => {
+      console.log(datos);
+    })
+}
+
+
+// fetch('https://server.com/data.json')
+//   .then((response) => response.json())
+//   .then((json) => console.log(json))
+
+// fetch('./datos.json')
+//   .then((response) => response.json())
+//   .then(data => {
+//     const propiedadesContainer = document.getElementById('propiedades-container');
+
+//     data.forEach(propiedad => {
+//       const propiedadElement = document.createElement('article');
+//       propiedadElement.classList.add('popular__card', 'swiper-slide');
+
+//       const imagenElement = document.createElement('img');
+//       imagenElement.scr = propiedad.imagen;
+
+//       const dataElement = document.createElement('h2');
+//       dataElement.classList.add('popular__data');
+
+//       const priceElement = document.createElement('h2');
+//       priceElement.classList.add('popular__price');
+//       priceElement.innerHTML = `<span>USD</span>${propiedad.precio}`;
+
+//       const titleElement = document.createElement('h3');
+//       titleElement.classList.add('popular__title');
+//       titleElement.textContent = propiedad.nombre;
+
+//       const descriptionElement = document.createElement('p');
+//       descriptionElement.classList.add('popular__description');
+//       descriptionElement.textContent = propiedad.descripcion;
+
+//       dataElement.appendChild(priceElement);
+//       dataElement.appendChild(titleElement);
+//       dataElement.appendChild(descriptionElement);
+
+//       propiedadElement.appendChild(imagenElement);
+//       propiedadElement.appendChild(dataElement);
+
+//       propiedadesContainer.appendChild(propiedadElement);
+//     });
+//   });
