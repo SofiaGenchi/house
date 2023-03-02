@@ -17,7 +17,7 @@ var swiperPopular = new Swiper(".popular__container", {
     534: {
       slidesPerView: 3,
     },
-    325: {
+    320: {
       slidesPerView: 1,
     },
   },
