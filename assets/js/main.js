@@ -7,7 +7,7 @@ window.addEventListener("scroll", scrollHeader);
 
 
 var swiperPopular = new Swiper(".popular__container", {
-  spaceBetween: 32,
+  spaceBetween: 30,
   grabCursor: true,
   centeredSlides: true,
   slidesPerView: 3,
@@ -133,59 +133,6 @@ function copyEmail() {
 }
 
 // leyendo json
-// function getData(){
-//   fetch('./assets/json/data.json')
-//     .then(res => res.json)
-//     .then(datos => {
-//       console.log(datos);
-//     })
-// }
-
-
-// fetch('https://server.com/data.json')
-//   .then((response) => response.json())
-//   .then((json) => console.log(json))
-
-// fetch('./datos.json')
-//   .then((response) => response.json())
-//   .then(data => {
-//     const propiedadesContainer = document.getElementById('propiedades-container');
-
-//     data.forEach(propiedad => {
-//       const propiedadElement = document.createElement('article');
-//       propiedadElement.classList.add('popular__card', 'swiper-slide');
-
-//       const imagenElement = document.createElement('img');
-//       imagenElement.scr = propiedad.imagen;
-
-//       const dataElement = document.createElement('h2');
-//       dataElement.classList.add('popular__data');
-
-//       const priceElement = document.createElement('h2');
-//       priceElement.classList.add('popular__price');
-//       priceElement.innerHTML = `<span>USD</span>${propiedad.precio}`;
-
-//       const titleElement = document.createElement('h3');
-//       titleElement.classList.add('popular__title');
-//       titleElement.textContent = propiedad.nombre;
-
-//       const descriptionElement = document.createElement('p');
-//       descriptionElement.classList.add('popular__description');
-//       descriptionElement.textContent = propiedad.descripcion;
-
-//       dataElement.appendChild(priceElement);
-//       dataElement.appendChild(titleElement);
-//       dataElement.appendChild(descriptionElement);
-
-//       propiedadElement.appendChild(imagenElement);
-//       propiedadElement.appendChild(dataElement);
-
-//       propiedadesContainer.appendChild(propiedadElement);
-//     });
-//   });
-
-
-
 
 async function propiedades() {
   const requestURL = 'https://raw.githubusercontent.com/SofiaGenchi/house/main/assets/json/datos.json';
@@ -195,8 +142,7 @@ async function propiedades() {
   const propiedadesText = await response.text();
 
   const misPropiedades = JSON.parse(propiedadesText);
-  propiedadesArticle(misPropiedades)
-  // propiedadesHeroes(misPropiedades);
+  propiedadesArticle(misPropiedades);
 }
 
 function propiedadesArticle(obj) {
@@ -214,26 +160,25 @@ function propiedadesArticle(obj) {
     article.classList.add('popular__card', 'swiper-slide')
     divData.classList.add('popular__data');
 
-    img.textContent = propiedad.imagen;
+    img.src = propiedad.imagen;
     img.classList.add('popular__img');
 
-    price.textContent = `<span>USD</span> ${propiedad.precio}`;
+    price.innerHTML = `<span>USD</span> ${parseInt(propiedad.precio)}`;
     price.classList.add('popular__price');
 
     title.textContent = `${propiedad.nombre}`;
     title.classList.add('popular__title');
 
-    description.textContent = `${propiedad.description}`;
+    description.textContent = `${propiedad.descripcion}`;
     description.classList.add('popular__description');
 
-
+    propiedadesContainer.appendChild(article);
     article.appendChild(img);
     article.appendChild(divData);
     divData.appendChild(price);
     divData.appendChild(title);
     divData.appendChild(description);
 
-    propiedadesContainer.appendChild(article);
   }
 }
 propiedades();

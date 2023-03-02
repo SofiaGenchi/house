@@ -406,6 +406,10 @@ button {
   right: calc(50% - 3rem);
 }
 
+.swiper-wrapper {
+  justify-content: center;
+}
+
 /* value------ */
 .value__container {
   row-gap: 3rem;
