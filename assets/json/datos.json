@@ -1,6 +1,44 @@
-{
+[
+  {
     "nombre": "Puan al 4300",
     "precio": 62.000,
     "descripcion": "Hermoso Ph en Venta en Caseros, Tres de Febrero. Desarrollado en primer piso con acceso por escalera.",
     "imagen": "./assets/img/popular1.jpg"
-}
+  },
+  {
+    "nombre": "Bonifacini al 5500",
+    "precio": 125.000,
+    "descripcion": "Casa en Venta en Caseros, Tres de Febrero. Construida en una planta, se ingresa por hall de entrada que distribuye a los dormitorios y hacia el amplio comedor.",
+    "imagen": "./assets/img/popular2.jpg"
+  },
+  {
+    "nombre": "Hornos al 2700",
+    "precio": 47.000,
+    "descripcion": "Departamento en Venta en Caseros, Tres de Febrero. Monoambiente, apto profesional, ubicado en P7 con balcon, excelente distribucion.",
+    "imagen": "./assets/img/popular3.jpg"
+  },
+  {
+    "nombre": "Pringles al 2600",
+    "precio": 38.000,
+    "descripcion": "Departamento en Venta en Caseros, Tres de Febrero. La unidad sera de 1 amb. con una excelente distribucion y facil division, cuenta con balcon.",
+    "imagen": "./assets/img/popular4.jpg"
+  },
+  {
+    "nombre": "Zavatarro al 4100",
+    "precio": 85.000,
+    "descripcion": "Excelente PH al frente con cochera en Venta en Santos Lugares, Tres de Febrero. 4 amb. con patio y terraza.",
+    "imagen": "./assets/img/popular5.jpg"
+  },
+  {
+    "nombre": "Calle 8 al 3000",
+    "precio": 45.000,
+    "descripcion": "Departamento en Venta en San Clemente Del Tuyu, De La Costa. Excelente oportunidad para invertir en la costa!",
+    "imagen": "./assets/img/popular6.jpg"
+  },
+  {
+    "nombre": "Pringles al 2600",
+    "precio": 8.000,
+    "descripcion": "Cochera en Venta en Caseros, Tres de Febrero. Con porton automatizado, tu mejor opcion para invertir!",
+    "imagen": "./assets/img/popular7.jpg"
+  }
+]

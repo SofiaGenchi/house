@@ -133,13 +133,13 @@ function copyEmail() {
 }
 
 // leyendo json
-function getData(){
-  fetch('./assets/json/data.json')
-    .then(res => res.json)
-    .then(datos => {
-      console.log(datos);
-    })
-}
+// function getData(){
+//   fetch('./assets/json/data.json')
+//     .then(res => res.json)
+//     .then(datos => {
+//       console.log(datos);
+//     })
+// }
 
 
 // fetch('https://server.com/data.json')
