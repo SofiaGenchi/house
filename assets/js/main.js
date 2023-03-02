@@ -183,3 +183,57 @@ function copyEmail() {
 //       propiedadesContainer.appendChild(propiedadElement);
 //     });
 //   });
+
+
+
+
+async function propiedades() {
+  const requestURL = 'https://raw.githubusercontent.com/SofiaGenchi/house/main/assets/json/datos.json';
+  const request = new Request(requestURL);
+
+  const response = await fetch(request);
+  const propiedadesText = await response.text();
+
+  const misPropiedades = JSON.parse(propiedadesText);
+  propiedadesArticle(misPropiedades)
+  // propiedadesHeroes(misPropiedades);
+}
+
+function propiedadesArticle(obj) {
+  const propiedadesContainer = document.getElementById('propiedades-container');
+  const propiedades = obj.propiedades;
+
+  for (const propiedad of propiedades){
+    const article = document.createElement('article');
+    const divData = document.createElement('div');
+    const img = document.createElement('img');
+    const price = document.createElement('h2');
+    const title = document.createElement('h3');
+    const description = document.createElement('p')
+
+    article.classList.add('popular__card', 'swiper-slide')
+    divData.classList.add('popular__data');
+
+    img.textContent = propiedad.imagen;
+    img.classList.add('popular__img');
+
+    price.textContent = `<span>USD</span> ${propiedad.precio}`;
+    price.classList.add('popular__price');
+
+    title.textContent = `${propiedad.nombre}`;
+    title.classList.add('popular__title');
+
+    description.textContent = `${propiedad.description}`;
+    description.classList.add('popular__description');
+
+
+    article.appendChild(img);
+    article.appendChild(divData);
+    divData.appendChild(price);
+    divData.appendChild(title);
+    divData.appendChild(description);
+
+    propiedadesContainer.appendChild(article);
+  }
+}
+propiedades();
